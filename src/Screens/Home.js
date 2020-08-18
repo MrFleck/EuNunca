@@ -54,8 +54,32 @@ class Home extends Component {
                         <TouchableOpacity onPress={() => this.fechaAviso()} style={{ marginTop: scale(15), marginLeft: scale(250), backgroundColor: '#000', borderRadius: scale(100), width: scale(26), alignItems: 'center' }}>
                             <Icon name="times-circle" size={30} color='#ff8040' />
                         </TouchableOpacity>
-                        <View style={{ padding: scale(50), marginTop: scale(10) }}>
-                            <Text style={{ color: '#000', fontWeight: 'bold' }}>INFOS DFBSDHFDJSFBDJSHFBJSDHFBDSJHFBJDSHFBJDSHFBDJSHFBIEU DHSHBFDHFBDJHFBDSJHFBDHJSFBDHSJFBHDSB KFMLDKSFNKDJFNDKSJFNDKSJFNKDJFNKSJDNF</Text>
+                        <View style={{ paddingTop: scale(10), width: scale(270), height: scale(330), marginLeft: scale(20) }}>
+                            <ScrollView >
+                                <Text style={{ color: '#000', fontWeight: 'bold' }}>
+                                    <Text style={{ fontWeight: '900' }}>Como brincar de Eu Nunca?{"\n"}{"\n"}</Text>
+
+                                    Para começar a brincadeira, deve ser feito um círculo, para que todos escutem bem e vejam as reações das pessoas.
+
+                                    Então, uma pessoa começa a brincadeira lendo a sua primeira afirmação que irá aparecer na tela, que sempre começa com “eu nunca”, por exemplo “eu não viajei para fora do país”. Então, as pessoas que já fizeram isso perdem a rodada.{"\n"}{"\n"}
+
+                                    Existem dois jeitos mais famosos de brincar de eu nunca, e eles variam no que fazer na hora que a pessoa perde.{"\n"}{"\n"}
+
+                                    <Text style={{ fontWeight: '900' }}>Quem perde bebe:{"\n"}{"\n"}</Text>
+
+                                    Cada pessoa fica com um copo de bebida alcoólica. Então, se você já tiver feito o que a pessoa perguntou, você deve beber um gole ou virar um shot, e quem não tiver feito não precisa beber.{"\n"}{"\n"}
+
+                                    No “eu nunca” com bebida não existe eliminação, as pessoas vão jogando até que fiquem bêbadas.{"\n"}{"\n"}
+
+                                    <Text style={{ fontWeight: '900' }}>Mas atenção: a venda e consumo de bebidas alcoólicas é extremamente proibida por lei para menores de 18 anos no Brasil.{"\n"}{"\n"}</Text>
+
+                                    <Text style={{ fontWeight: '900' }}>Contando pontuações:{"\n"}{"\n"}</Text>
+
+                                    As pessoas começam cada uma com 10 pontos, que são contados nos seus dedos. Cada vez que você tiver feito algo que foi perguntado, você perde um ponto e deve abaixar um dedo. Assim, quem perder os 10 pontos sai da brincadeira, e quem ficar por último ganha.{"\n"}{"\n"}
+
+                                    Em ambas as versões do jogo, a regra também pode ser feita ao contrário. Nesse caso, quem bebe ou perde ponto é aquela pessoa que não fez o que foi perguntado no jogo.
+                            </Text>
+                            </ScrollView>
                         </View>
                     </View>
                 }
