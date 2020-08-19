@@ -3,6 +3,9 @@ import { Actions } from 'react-native-router-flux';
 import DeviceInfo from 'react-native-device-info';
 import { StyleSheet, View, Text, ScrollView, FlatList, TouchableOpacity, Image, Platform, Dimensions, AsyncStorage, Alert } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {
+    AdMobInterstitial
+} from 'react-native-admob'
 
 //Scale
 import { scale } from '../assets/scaling'
@@ -1309,7 +1312,7 @@ class SelectLevel extends Component {
             [
                 {
                     text: 'Confirmo ter mais de 18 anos',
-                    onPress: () => modo == true ? Actions.askScreen({ perguntas: this.state.perguntasOusadas }) : Actions.askScreen({ perguntas: this.state.perguntasMistas })
+                    onPress: () => modo == true ? [this.showAds(modo), Actions.askScreen({ perguntas: this.state.perguntasOusadas })] : Actions.askScreen({ perguntas: this.state.perguntasMistas })
                 },
                 {
                     text: 'Cancelar'
@@ -1317,6 +1320,14 @@ class SelectLevel extends Component {
             ],
             { cancelable: false }
         );
+    }
+
+
+    showAds(modo) {
+        console.log('CHAMANDO O SHOW ADS: ' + modo)
+        // AdMobInterstitial.setAdUnitID('ca-app-pub-7003464898124957/4672866934');
+        // AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
+        // AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
     }
 
     render() {
@@ -1372,6 +1383,8 @@ do suave ao ousado em um toque.</Text>
                                 </View>
                             </View>
                         </View>
+
+                        <View style={{ marginTop: scale(50), marginLeft: scale(20) }} />
                     </View >
                 </ScrollView>
             </>

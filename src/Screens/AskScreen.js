@@ -86,12 +86,11 @@ class AskScreen extends Component {
                         <Text style={{ textAlign: 'center', fontSize: scale(20), textTransform: 'uppercase' }}>{this.state.pergunta}</Text>
                     </View>
                     <View style={{ marginTop: scale(50), alignItems: 'center' }}>
-                        <TouchableOpacity onPress={() => this.proximo()} style={{ backgroundColor: '#ff8040', borderRadius: scale(20), borderColor: '#000', borderWidth: scale(1.2), height: scale(30), width: scale(250), alignItems: 'center' }}>
+                        <TouchableOpacity onPress={() => this.proximo()} style={{ position: 'absolute', zIndex: 1, backgroundColor: '#ff8040', borderRadius: scale(20), borderColor: '#000', borderWidth: scale(1.2), height: scale(30), width: scale(250), alignItems: 'center' }}>
                             <Text style={{ marginTop: scale(3), color: '#000', fontFamily: 'Arial', fontWeight: 'bold', fontSize: scale(20) }}> PRÓXIMO </Text>
                         </TouchableOpacity>
                     </View>
                 </View >
-                <View style={{}} />
             </View>
 
         );
