@@ -1312,7 +1312,7 @@ class SelectLevel extends Component {
             [
                 {
                     text: 'Confirmo ter mais de 18 anos',
-                    onPress: () => modo == true ? [this.showAds(modo), Actions.askScreen({ perguntas: this.state.perguntasOusadas })] : Actions.askScreen({ perguntas: this.state.perguntasMistas })
+                    onPress: () => modo == true ? [this.showAds(modo), Actions.askScreen({ perguntas: this.state.perguntasOusadas })] : [this.showAds(modo), Actions.askScreen({ perguntas: this.state.perguntasMistas })]
                 },
                 {
                     text: 'Cancelar'
@@ -1325,9 +1325,19 @@ class SelectLevel extends Component {
 
     showAds(modo) {
         console.log('CHAMANDO O SHOW ADS: ' + modo)
-        // AdMobInterstitial.setAdUnitID('ca-app-pub-7003464898124957/4672866934');
-        // AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
-        // AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
+        //Nosso ID inserido
+        //AdMobInterstitial.setAdUnitID('ca-app-pub-7003464898124957/4672866934');
+        
+        //ID DE TESTE
+        AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/1033173712');
+        
+        
+        AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
+
+        if (modo ==="suave"){
+            Actions.askScreen({perguntas: this.state.perguntasSuaves})
+        }
+
     }
 
     render() {
@@ -1347,7 +1357,7 @@ class SelectLevel extends Component {
                                 <Image source={require('../assets/img/suave.png')} style={{ width: scale(90), marginTop: scale(-15) }} resizeMode="contain" />
                                 <Text style={{ color: '#000', textAlign: 'center', width: scale(280), fontWeight: '600' }}>Bora começar os jogos com perguntas
                                                                                  bem suaves para o ínico da brincadeira.</Text>
-                                <TouchableOpacity onPress={() => Actions.askScreen({ perguntas: this.state.perguntasSuaves })} style={{ marginTop: scale(20), backgroundColor: '#ff8040', borderRadius: scale(20), borderColor: '#000', borderWidth: scale(1.2), height: scale(30), width: scale(250), alignItems: 'center' }}>
+                                <TouchableOpacity onPress={() => this.showAds('suave') }style={{ marginTop: scale(20), backgroundColor: '#ff8040', borderRadius: scale(20), borderColor: '#000', borderWidth: scale(1.2), height: scale(30), width: scale(250), alignItems: 'center' }}>
                                     <Text style={{ marginTop: scale(3), color: '#000', fontFamily: 'Arial', fontWeight: 'bold', fontSize: scale(20) }}> JOGAR </Text>
                                 </TouchableOpacity>
                             </View>

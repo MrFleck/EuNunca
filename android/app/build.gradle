@@ -134,6 +134,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     splits {
         abi {
@@ -180,11 +181,27 @@ android {
     }
 }
 
+configurations.all {
+    resolutionStrategy {
+        force "com.google.android.gms:play-services-base:16.1.0"
+        force "com.google.android.gms:play-services-gcm:16.1.0"
+        force "com.google.android.gms:play-services-ads:17.2.0" 
+    } 
+}
+
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
+    //AndroidX
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //Google Admob
+    implementation ('com.google.android.gms:play-services-ads:19.3.0') { force = true; }
+    // implementation ('com.google.android.gms:play-services-ads:18.0.0')
+
+    
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
