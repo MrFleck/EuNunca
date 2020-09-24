@@ -1330,10 +1330,10 @@ class SelectLevel extends Component {
         
         //ID DE TESTE
         AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/1033173712');
-        
-        
-        AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
 
+        //Chamando o ads em si
+        AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
+        
         if (modo ==="suave"){
             Actions.askScreen({perguntas: this.state.perguntasSuaves})
         }
