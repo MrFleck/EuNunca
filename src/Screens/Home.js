@@ -84,7 +84,7 @@ class Home extends Component {
                     </View>
                 }
                 <View style={{ marginTop: scale(50), marginLeft: scale(20) }}>
-                    <TouchableOpacity onPress={() => this.abreAviso()} style={{ backgroundColor: '#000', borderRadius: scale(50), width: scale(30), alignItems: 'center' }}>
+                    <TouchableOpacity onPress={() => this.abreAviso()} style={{ backgroundColor: '#000', borderRadius: scale(50), width: scale(33), alignItems: 'center' }}>
                         <Icon name="info-circle" size={36} color='#ff8040' />
                     </TouchableOpacity>
                 </View>
@@ -93,12 +93,12 @@ class Home extends Component {
                         <Image source={require('../assets/img/Logo.png')} style={{ width: scale(180), height: scale(180) }} resizeMode="contain" />
                     </View>
                     <View style={{ marginTop: this.state.iphoneX ? scale(90) : scale(40) }}>
-                        <TouchableOpacity onPress={() => Actions.SelectLevel()} style={{ backgroundColor: '#ff8040', borderRadius: scale(20), borderColor: '#000', borderWidth: scale(1.2), height: scale(30), width: scale(250), alignItems: 'center' }}>
+                        <TouchableOpacity onPress={() => Actions.SelectLevel()} style={{ backgroundColor: '#ff8040', borderRadius: scale(20), borderColor: '#000', borderWidth: scale(1.2), height: scale(35), width: scale(250), alignItems: 'center' }}>
                             <Text style={{ marginTop: scale(3), color: '#000', fontFamily: 'Arial', fontWeight: 'bold', fontSize: scale(20) }}> JOGAR </Text>
                         </TouchableOpacity>
                     </View>
-                    <View style={{ marginTop: this.state.iphoneX ? scale(220) : scale(160) }}>
-                        <Text style={{ textAlign: 'center', width: scale(80), color: '#000', fontFamily: 'Arial', fontWeight: 'bold', }}> KTZ STUDIO V. 0.1</Text>
+                    <View style={{ marginTop: this.state.iphoneX ? scale(220) : scale(50) }}>
+                        <Text style={{ textAlign: 'center', width: scale(80), color: '#000', fontFamily: 'Arial', fontWeight: 'bold', }}> KTZ STUDIO V. 1.0.0</Text>
                     </View>
                 </View>
             </View >

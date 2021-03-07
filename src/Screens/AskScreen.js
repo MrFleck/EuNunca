@@ -80,14 +80,14 @@ class AskScreen extends Component {
                 </View>
                 <View style={styles.Container}>
                     <View style={{ marginTop: scale(12), marginLeft: scale(-123) }}>
-                        <Image source={require('../assets/img/layout.png')} style={{ width: scale(600), height: scale(550), position: 'absolute', zIndex: 1 }} resizeMode="contain" />
+                        <Image source={require('../assets/img/layout.png')} style={{ width: scale(600), height: scale(510), position: 'absolute', zIndex: 1 }} resizeMode="contain" />
                     </View>
-                    <View style={{ height: scale(200), width: scale(300), marginLeft: scale(30), marginTop: scale(200) }}>
+                    <View style={{height: scale(220), width: scale(250), marginLeft: scale(52), marginTop: scale(150) }}>
                         <Text style={{ textAlign: 'center', fontSize: scale(20), textTransform: 'uppercase' }}>{this.state.pergunta}</Text>
                     </View>
                     <View style={{ marginTop: scale(50), alignItems: 'center' }}>
-                        <TouchableOpacity onPress={() => this.proximo()} style={{ position: 'absolute', zIndex: 1, backgroundColor: '#ff8040', borderRadius: scale(20), borderColor: '#000', borderWidth: scale(1.2), height: scale(30), width: scale(250), alignItems: 'center' }}>
-                            <Text style={{ marginTop: scale(3), color: '#000', fontFamily: 'Arial', fontWeight: 'bold', fontSize: scale(20) }}> PRÓXIMO </Text>
+                        <TouchableOpacity onPress={() => this.proximo()} style={{ position: 'absolute', zIndex: 1, backgroundColor: '#ff8040', borderRadius: scale(20), borderColor: '#000', borderWidth: scale(1.2), height: scale(35), width: scale(250), alignItems: 'center' }}>
+                            <Text style={{ marginTop: scale(3), marginBottom: scale(3), color: '#000', fontFamily: 'Arial', fontWeight: 'bold', fontSize: scale(20) }}> PRÓXIMO </Text>
                         </TouchableOpacity>
                     </View>
                 </View >
