@@ -1304,7 +1304,6 @@ class SelectLevel extends Component {
         }
     }
 
-
     callAlert(modo) {
         Alert.alert(
             'Atenção',
@@ -1324,12 +1323,13 @@ class SelectLevel extends Component {
 
 
     showAds(modo) {
-        console.log('CHAMANDO O SHOW ADS: ' + modo)
+        console.log('CHAMANDO O SHOW ADS: ' + modo);
+        
         //Nosso ID inserido
-        //AdMobInterstitial.setAdUnitID('ca-app-pub-7003464898124957/4672866934');
+        AdMobInterstitial.setAdUnitID('ca-app-pub-7003464898124957/4672866934');
         
         //ID DE TESTE
-        AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/1033173712');
+        // AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/1033173712');
 
         //Chamando o ads em si
         AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
