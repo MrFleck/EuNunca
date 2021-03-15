@@ -98,7 +98,7 @@ class Home extends Component {
                         </TouchableOpacity>
                     </View>
                     <View style={{ marginTop: this.state.iphoneX ? scale(220) : scale(50) }}>
-                        <Text style={{ textAlign: 'center', width: scale(80), color: '#000', fontFamily: 'Arial', fontWeight: 'bold', }}> KTZ STUDIO V. 1.0.0</Text>
+                        <Text style={{ textAlign: 'center', width: scale(80), color: '#000', fontFamily: 'Arial', fontWeight: 'bold', }}> KTZ STUDIO V. 1.0.1</Text>
                     </View>
                 </View>
             </View >

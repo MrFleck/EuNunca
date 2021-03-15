@@ -1357,7 +1357,7 @@ class SelectLevel extends Component {
                                 <Image source={require('../assets/img/suave.png')} style={{ width: scale(90), marginTop: scale(-15) }} resizeMode="contain" />
                                 <Text style={{ color: '#000', textAlign: 'center', width: scale(280), fontWeight: '600' }}>Bora começar os jogos com perguntas
                                                                                  bem suaves para o ínico da brincadeira.</Text>
-                                <TouchableOpacity onPress={() => this.showAds('suave') }style={{ marginTop: scale(20), backgroundColor: '#ff8040', borderRadius: scale(20), borderColor: '#000', borderWidth: scale(1.2), height: scale(30), width: scale(250), alignItems: 'center' }}>
+                                <TouchableOpacity onPress={() => this.showAds('suave') }style={{ marginTop: scale(20), backgroundColor: '#ff8040', borderRadius: scale(20), borderColor: '#000', borderWidth: scale(1.2), height: scale(35), width: scale(250), alignItems: 'center' }}>
                                     <Text style={{ marginTop: scale(3), color: '#000', fontFamily: 'Arial', fontWeight: 'bold', fontSize: scale(20) }}> JOGAR </Text>
                                 </TouchableOpacity>
                             </View>
@@ -1371,8 +1371,8 @@ class SelectLevel extends Component {
                                     <Image source={require('../assets/img/ousado.png')} style={{ width: scale(100), marginTop: scale(-15) }} resizeMode="contain" />
                                     <Text style={{ color: '#000', textAlign: 'center', width: scale(280), fontWeight: '600' }}>Hora de apimentar a brincadeira,
 com perguntas mais pessoais e ousadas.</Text>
-                                    <TouchableOpacity onPress={() => this.callAlert(true)} style={{ marginTop: scale(20), backgroundColor: '#ff8040', borderRadius: scale(20), borderColor: '#000', borderWidth: scale(1.2), height: scale(30), width: scale(250), alignItems: 'center' }}>
-                                        <Text style={{ marginTop: scale(3), color: '#000', fontFamily: 'Arial', fontWeight: 'bold', fontSize: scale(20) }}> JOGAR </Text>
+                                    <TouchableOpacity onPress={() => this.callAlert(true)} style={{ marginTop: scale(20), backgroundColor: '#ff8040', borderRadius: scale(20), borderColor: '#000', borderWidth: scale(1.2), height: scale(35), width: scale(250), alignItems: 'center' }}>
+                                        <Text style={{ marginTop: scale(3), marginBottom: scale(3), color: '#000', fontFamily: 'Arial', fontWeight: 'bold', fontSize: scale(20) }}> JOGAR </Text>
                                     </TouchableOpacity>
                                 </View>
                             </View>
@@ -1387,7 +1387,7 @@ com perguntas mais pessoais e ousadas.</Text>
                                     <Image source={require('../assets/img/misto.png')} style={{ width: scale(100), marginTop: scale(-15) }} resizeMode="contain" />
                                     <Text style={{ color: '#000', textAlign: 'center', width: scale(280), fontWeight: '600' }}>Uma grande mistura, cai pergunta de tudo,
 do suave ao ousado em um toque.</Text>
-                                    <TouchableOpacity onPress={() => this.callAlert(false)} style={{ marginTop: scale(20), backgroundColor: '#ff8040', borderRadius: scale(20), borderColor: '#000', borderWidth: scale(1.2), height: scale(30), width: scale(250), alignItems: 'center' }}>
+                                    <TouchableOpacity onPress={() => this.callAlert(false)} style={{ marginTop: scale(20), backgroundColor: '#ff8040', borderRadius: scale(20), borderColor: '#000', borderWidth: scale(1.2), height: scale(35), width: scale(250), alignItems: 'center' }}>
                                         <Text style={{ marginTop: scale(3), color: '#000', fontFamily: 'Arial', fontWeight: 'bold', fontSize: scale(20) }}> JOGAR </Text>
                                     </TouchableOpacity>
                                 </View>
